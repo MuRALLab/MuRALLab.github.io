@@ -2,101 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MuRAL Lab – Research Group</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #222;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #003366;
-      color: #fff;
-      padding: 1em 2em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.5em;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 1.5em;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 2em;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 3em;
-    }
-
-    h2 {
-      color: #003366;
-      margin-top: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1em;
-      background: #003366;
-      color: white;
-    }
-
-    .pub-list, .project-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .pub-list li, .project-list li {
-      margin-bottom: 1em;
-    }
-  </style>
+  <title>MuRAL Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-  <header>
-    <h1>MuRAL Lab - MultiRobot Autonomy and Learning Lab</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="header">
+    <h1>MuRAL Lab</h1>
+    <p>Multi-Robot Autonomy and Learning Lab</p>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Us</h2>
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#research">Research Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#people">People</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="about" class="section">
+      <h2>About</h2>
       <p>
-        MuRAL Lab – Multi-Robot Autonomy and Learning Lab focuses on advancing the theory and practice of multi-agent coordination and cooperation for autonomous robotic systems. 
-        The lab’s research centers on reinforcement learning and related learning-based methods for multi-robot autonomy, enabling teams of robots to perceive, navigate, and make decisions collectively in complex, uncertain environments. 
-        MuRAL Lab emphasizes real-world applications in environmental monitoring, exploration, navigation, and perception, with a particular focus on challenging domains such as underwater, polar, aerial, and unstructured terrestrial environments. 
-        Through a combination of algorithmic development, simulation, and field-ready robotic systems, the lab aims to build robust, scalable autonomy for real-world multi-robot deployments. 
+        MuRAL Lab – Multi-Robot Autonomy and Learning Lab focuses on advancing the theory and practice of 
+        multi-agent coordination and cooperation for autonomous robotic systems. The lab’s research centers 
+        on reinforcement learning and related learning-based methods for multi-robot autonomy, 
+        enabling teams of robots to perceive, navigate, and make decisions collectively in complex, uncertain environments. 
+        MuRAL Lab emphasizes real-world applications in environmental monitoring, exploration, navigation, and perception, 
+        with a particular focus on challenging domains such as underwater, polar, aerial, and unstructured terrestrial environments. 
+        Through a combination of algorithmic development, simulation, and field-ready robotic systems, the lab aims to build robust, 
+        scalable autonomy for real-world multi-robot deployments.
       </p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="research" class="section alt">
+      <h2>Research Projects</h2>
       <ul class="project-list">
         <li>
           <strong>Policy Search for Active Sampling:</strong> Adaptive sampling using non‑myopic reinforcement learning to plan informative and efficient data collection paths.
@@ -110,7 +51,7 @@
       </ul>
     </section>
 
-    <section id="publications">
+    <section id="publications" class="section alt">
       <h2>Publications</h2>
       <ul class="pub-list">
         <li>
@@ -128,21 +69,30 @@
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:msandeep.sjce@gmail.com">msandeep.sjce@gmail.com</a></p>
-      <p>Affiliation: GRASP Lab, University of Pennsylvania</p>
-      <p>
-        <a href="#">GitHub</a> |
-        <a href="#">LinkedIn</a> |
-        <a href="#">Google Scholar</a>
-      </p>
+    <section id="people" class="section alt">
+      <h2>People</h2>
+      <ul class="ppl-list">
+        <li>
+          <a href="https://sandeepmanjanna.github.io/">Sandeep Manjanna</a>
+        </li>
+        <li>
+          <a href="">Rahul Kumar</a>
+        </li>
+        <li>
+          <a href="">Nidugondi L N Sai Pranav</a>
+        </li>
+        <li>
+          <a href="">Saswata Sarkar</a>
+        </li>
+      </ul>
     </section>
+
   </main>
 
-  <footer>
-    &copy; 2025 Sandeep Manjanna. All rights reserved.
+  <footer class="footer">
+    © MuRAL Lab · Plaksha University
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
