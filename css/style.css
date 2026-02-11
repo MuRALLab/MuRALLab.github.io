@@ -1,0 +1,122 @@
+:root {
+  --primary-dark: #0A6F6A;   /* Dark teal */
+  --primary: #0FA3A0;        /* Main teal */
+  --accent-light: #6EDAD7;   /* Light cyan */
+  --bg-main: #F5FBFB;        /* Very light background */
+  --bg-alt: #EAF6F6;         /* Section alternate */
+  --text-main: #0F2E2E;      /* Dark readable text */
+  --text-muted: #4F6F6F;
+  --border-soft: #D6EEEE;
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+/* ---------- Header ---------- */
+.header {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: white;
+  padding: 3.5rem 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  color: #E6F7F7;
+}
+
+/* ---------- Navigation ---------- */
+.navbar {
+  background: white;
+  border-bottom: 1px solid var(--border-soft);
+  padding: 0.75rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar a {
+  margin-right: 1.5rem;
+  color: var(--primary-dark);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  background: white;
+  border-left: 6px solid var(--primary);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+}
+
+.section.alt {
+  background: var(--bg-alt);
+}
+
+.section h2 {
+  margin-top: 0;
+  color: var(--primary-dark);
+  font-size: 1.6rem;
+}
+
+/* ---------- Text ---------- */
+p {
+  margin: 0.75rem 0;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: white;
+  border-top: 1px solid var(--border-soft);
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
